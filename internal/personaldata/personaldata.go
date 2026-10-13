@@ -1,9 +1,15 @@
 package personaldata
 
+import "fmt"
+
+// Personal хранит имя, вес в килограммах и рост в метрах.
 type Personal struct {
-	// TODO: добавить поля
+	Name   string
+	Weight float64
+	Height float64
 }
 
+// Print выводит персональные данные пользователя.
 func (p Personal) Print() {
-	// TODO: реализовать функцию
+	fmt.Printf("Имя: %s\nВес: %.2f\nРост: %.2f\n", p.Name, p.Weight, p.Height)
 }
